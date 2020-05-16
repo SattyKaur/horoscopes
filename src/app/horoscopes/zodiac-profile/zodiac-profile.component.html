@@ -1,0 +1,40 @@
+
+
+<div class="mainContainer">
+  <img class="moonStars" src="../../../assets/images/horoscopes/moonStars.png" alt="">
+  <img class="moonStars2" src="../../../assets/images/horoscopes/moonStars2.png" alt="">
+  <h1 class="title">Horoscopes</h1>
+
+
+  <div class="cards">
+    <div class="header">
+      <img class="image" src="{{horoscope.profileImage}}" alt="">
+      <h1 class="subtitle">{{horoscope.horoscopeSign}}</h1>
+      <h5 class="date">{{horoscope.horoscopeDate}}</h5>
+    </div>
+    <div class="profileStats">
+      <ul>
+        <li><strong>Element:</strong> {{horoscope.element}}
+          <img class="icon" src="{{horoscope.elementIcon}}" alt="">
+        </li>
+        <li><strong>Ruling Planet:</strong> {{horoscope.planet}}
+        </li>
+        <li><strong>Symbol:</strong> {{horoscope.symbol}}
+        <img class="icon" src="{{horoscope.icon}}" alt=""></li>
+
+        <li><strong>Famous {{horoscope.horoscopeSign}}:</strong> {{horoscope.celebrity}}
+        </li>
+        <li><strong>Most Compatible with:</strong> {{horoscope.attractedTo}}</li>
+        <li><strong>Least Compatible with:</strong> {{horoscope.unattractedTo}}</li>
+      </ul>
+
+      <h3 class="keywords">"{{horoscope.keywords.first}}, {{horoscope.keywords.second}} and {{horoscope.keywords.third}}"</h3>
+      <p class="description">{{horoscope.description}}</p>
+
+
+    </div>
+  </div>
+
+
+
+</div>

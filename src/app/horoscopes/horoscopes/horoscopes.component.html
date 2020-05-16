@@ -1,0 +1,18 @@
+
+
+<div class="mainContainer">
+
+  <img class="moonStars" src="../../../assets/images/horoscopes/moonStars.png" alt="">
+  <img class="moonStars2" src="../../../assets/images/horoscopes/moonStars2.png" alt="">
+  <h1 class="title">Horoscopes</h1>
+
+  <h2 class="subtitle">Choose Your Zodiac Sign</h2>
+
+  <div class="gridContainer">
+    <div class="gridItem" *ngFor="let h of horoscopeData.horoscopes">
+      <img class="symbol" src="{{h.imageUrl}}" (click)="selectedHoroscope(h.id)" alt="">
+      <p class="center"><small>{{h.horoscopeDate}}</small></p>
+    </div>
+  </div>
+</div>
+

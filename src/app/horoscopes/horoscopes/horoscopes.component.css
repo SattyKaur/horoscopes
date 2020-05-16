@@ -1,0 +1,134 @@
+
+* {
+  box-sizing: border-box;
+}
+
+
+
+.mainContainer {
+  width: 100%;
+  height: 100%;
+  background-image: url("../../../assets/images/horoscopes/watercolour.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.moonStars {
+  width: 250px;
+  position: absolute;
+  margin-left: 30px;
+}
+
+.moonStars2 {
+  width: 250px;
+  position: absolute;
+  right: 0;
+}
+
+.title {
+  font-size: 80px;
+  margin: 0;
+  padding-top: 40px;
+  font-family: Baskerville, 'Times New Roman', serif;
+  text-align: center;
+  color: #012121;
+}
+
+.subtitle {
+  font-family: Baskerville, 'Times New Roman', serif;
+  text-align: center;
+  color: #012121;
+}
+
+.gridContainer {
+  position: relative;
+  margin: 30px auto 0 auto;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  width: 1200px;
+  z-index: 2;
+}
+
+.gridItem {
+  overflow: visible;
+}
+
+
+.symbol {
+  width: 45%;
+  display: block;
+  margin: auto;
+  transition: transform .5s ease;
+}
+
+.symbol:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+.center {
+  text-align: center;
+  color: #012121;
+}
+
+@media (max-width: 1100px) {
+
+  .gridContainer {
+    position: relative;
+    margin: 30px auto 0 auto;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    width: 900px;
+    z-index: 3;
+  }
+  .symbol {
+    width: 45%;
+    display: block;
+    margin: auto;
+    transition: transform .5s ease;
+  }
+
+}
+
+@media (max-width: 900px) {
+
+  .gridContainer {
+    position: relative;
+    margin: 30px auto 0 auto;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    width: 700px;
+    z-index: 3;
+  }
+  .symbol {
+    width: 45%;
+    display: block;
+    margin: auto;
+    transition: transform .5s ease;
+  }
+
+}
+
+@media (max-width: 650px) {
+
+  .gridContainer {
+    position: relative;
+    margin: 30px auto 0 auto;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    width: 500px;
+    z-index: 3;
+  }
+  .symbol {
+    width: 45%;
+    display: block;
+    margin: auto;
+    transition: transform .5s ease;
+  }
+  .center {
+    font-size: 15px;
+    text-align: center;
+    color: #012121;
+  }
+
+}
